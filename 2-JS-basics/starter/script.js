@@ -80,7 +80,7 @@ console.log(typeof x);
 /**********************
  * Operator precedence
  */
-
+/*
  var now = 2019;
  var yearJohn = 1989;
  var fullAge = 18;
@@ -107,3 +107,33 @@ console.log(typeof x);
  console.log(x);
  x++;
  console.log(x);
+*/
+
+ /**********************
+  * Coding Challenge 1
+  */
+
+  /**
+   * Mark and John are trying to compare their BMI, which is calculated using the forumula:
+   * BMI = mass /height^2 or mass / (height * height).
+   * (mass in kgs and height in meters)
+   * 
+   * 1) Store Mark's and John's mass and height in variables.
+   * 2) Calculate both thier BMIs
+   * 3) Create a boolean variable containing information about whether Mark has a higher BMI than John.
+   * 4) Print a string to the console containing the variable from step 3. 
+   */
+
+var johnHeight, johnWeight, markHeight, markWeight;
+
+johnHeight = 2;
+johnWeight = 68;
+markHeight = 1.5;
+markWeight = 80;
+
+johnBMI = johnWeight / ( johnHeight * johnHeight );
+markBMI = markWeight / ( markHeight * markHeight );
+
+higherBMI = markBMI >= johnBMI;
+
+console.log("Is Mark's BMI higher than John's?", higherBMI);
