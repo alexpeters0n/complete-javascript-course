@@ -123,7 +123,7 @@ console.log(typeof x);
    * 3) Create a boolean variable containing information about whether Mark has a higher BMI than John.
    * 4) Print a string to the console containing the variable from step 3. 
    */
-
+/*
 var johnHeight, johnWeight, markHeight, markWeight;
 
 johnHeight = 2;
@@ -137,3 +137,43 @@ markBMI = markWeight / ( markHeight * markHeight );
 higherBMI = markBMI >= johnBMI;
 
 console.log("Is Mark's BMI higher than John's?", higherBMI);
+*/
+
+/************************
+ * If / else statements
+ */
+
+var firstName = 'John';
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+   console.log(firstName + ' is married');
+}
+   else {
+      console.log(firstName + ' is not married.');
+   }
+
+var isMarried = true;
+if (isMarried) {
+   console.log(firstName + ' is married');
+}
+else {
+   console.log(firstName + ' is not married.');
+}
+
+var johnHeight, johnWeight, markHeight, markWeight;
+
+johnHeight = 2;
+johnWeight = 68;
+markHeight = 1.5;
+markWeight = 80;
+
+johnBMI = johnWeight / (johnHeight * johnHeight);
+markBMI = markWeight / (markHeight * markHeight);
+
+if (markBMI > johnBMI) {
+   console.log("Mark's BMI is higher than John's.");
+}
+   else {
+      console.log("John's BMI is higher than Mark's");
+   }
