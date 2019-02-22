@@ -260,7 +260,7 @@ switch (true) {
 
  //falsey values: underfined, null, 0, '', NaN
  //truthy values: NOT falsy values
-
+/*
 var height;
 
 height = 0;
@@ -275,3 +275,44 @@ if (height || height === 0) {
 if (height = '23') {
    console.log('The == operator does type coercion.');
 }
+*/
+
+/**
+ * Coding Challenge 2
+ */
+
+ /*
+ John and Mike both play basektball on different teams. In the latest 3 games, John's team
+ scored 89, 120, and 103 points. Mike's team scored 116, 94, and 123 points.
+
+ 1) Calculate the average score for each team
+ 2) Decide which teams wins in average (highest average score), and print the winner to the console.
+ Also include the acergae score in the output.
+ 3) Then change the scores to show different winners. Don't forget to take into account there might
+ be a draw.
+ 4) EXTRA: Mary also play basketball, and her team scored 97, 134, and 105 points. As before, log
+ the avergae winner to the console. 
+ */
+
+var averageTeamJohn = (89 + 120 + 103) / 3;
+var averageTeamMike = (116 + 94 + 123) / 3;
+var averageTeamMary = (97 + 134 + 105) / 3;
+console.log(averageTeamJohn, averageTeamMike, averageTeamMary);
+
+if (averageTeamJohn > averageTeamMike && averageTeamJohn > averageTeamMary) {
+   console.log("John's team scored " + averageTeamJohn + " points on average.");
+} else if (averageTeamMike > averageTeamJohn && averageTeamMike > averageTeamMary) {
+   console.log("Mike's team scored " + averageTeamMike + " points on average.");
+} else if ( averageTeamMary > averageTeamJohn && averageTeamMary > averageTeamMike) {
+   console.log("Mary's team scored " + averageTeamMary + " points on average.");
+} else {
+   console.log("There is a draw.");
+}
+
+// if (averageTeamJohn > averageTeamMike) {
+//    console.log("John's team scored " + averageTeamJohn + " points on average.");
+// } else if (averageTeamMike > averageTeamJohn) {
+//    console.log("Mike's team scored " + averageTeamMike + " points on averge.");
+// } else {
+//    console.log("There is a draw.");
+// }
