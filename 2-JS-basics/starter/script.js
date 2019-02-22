@@ -293,7 +293,7 @@ if (height = '23') {
  4) EXTRA: Mary also play basketball, and her team scored 97, 134, and 105 points. As before, log
  the avergae winner to the console. 
  */
-
+/*
 var averageTeamJohn = (89 + 120 + 103) / 3;
 var averageTeamMike = (116 + 94 + 123) / 3;
 var averageTeamMary = (97 + 134 + 105) / 3;
@@ -316,3 +316,34 @@ if (averageTeamJohn > averageTeamMike && averageTeamJohn > averageTeamMary) {
 // } else {
 //    console.log("There is a draw.");
 // }
+*/
+
+/**************
+ * Functions
+ */
+/*
+function calculateAge(birthYear) {
+   return 2019 - birthYear;
+}
+
+var ageAlex = calculateAge(1989);
+var ageMike = calculateAge(1962);
+var ageAlan = calculateAge(1994);
+console.log(ageAlex, ageMike, ageAlan);
+
+
+function yearsUntilRetirement(year, firstName) {
+   var age = calculateAge(year);
+   var retirement = 65 - age;
+
+   if (retirement > 0){
+   console.log(firstName + " retires in " + retirement + " years.");
+   } else {
+      console.log(firstName + " is already retired.");
+   }
+}
+
+yearsUntilRetirement(1989, "Alex");
+yearsUntilRetirement(1962, "Mike");
+yearsUntilRetirement(1994, "Alan");
+*/
