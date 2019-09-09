@@ -426,6 +426,7 @@ In the end, John would like to have 2 arrays:
 (NOTE: To calculate 20% of a value, simply multiply it with 20/100 = 0.2)
 */
 
+/*
 function tipCalculator(bill) {
    var percentage;
    if (bill < 50) {
@@ -450,3 +451,33 @@ var totalBill = [bills[0] + tips[0],
 ];
 
 console.log(tips, totalBill);
+*/
+
+/*******************************
+ * Objects and Properties
+ */
+
+//Object literal
+var john = {
+   firstName: 'John',
+   lastName: 'Smith',
+   birthYear: 1990,
+   family: ['Jane', 'Mark', 'Bob', 'Emily'],
+   job: 'teacher',
+   isMarried: false
+};
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+// new object syntax
+var jane = new Object();
+jane.name = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
